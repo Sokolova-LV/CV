@@ -83,6 +83,18 @@ header {
 
 .position {
     margin-bottom: 50px;
+    position: relative;
+}
+
+.position::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 75px;
+    background-color: var(--accent-color);
 }
 
 .main {
@@ -152,4 +164,30 @@ header {
 
 .education__text {
     margin-bottom: 10px;
+}
+
+footer {
+    height: 75px;
+    background-color: var(--accent-color);
+}
+
+.contacts-footer__list {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+.contacts-footer__item {
+    display: block;
+    margin-left: 0;
+}
+
+.contacts-footer__link {
+    color: var(--background-color);
+}
+
+.contacts-footer__link:hover,
+.contacts-footer__link:focus {
+    font-weight: 700;
+    transition: var(--duration) var(--timing-function);
 }
