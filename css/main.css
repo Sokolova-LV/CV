@@ -37,15 +37,39 @@ a {
 }
 
 h1 {
-    font-size: 45px;
     font-weight: 700;
     margin: 0;
 }
 
+@media screen and (min-width: 480px) {
+    h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 44px;
+        text-align: left;
+    }
+}
+
 h2 {
-    font-size: 30px;
     font-weight: 400;
     margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h2 {
+        font-size: 30px;
+    }
 }
 
 h3 {
@@ -73,8 +97,28 @@ p {
     margin: 0 auto;
 }
 
-header {
-    padding-top: 75px;
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    header {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        padding-top: 75px;
+    }
 }
 
 .name {
@@ -82,32 +126,84 @@ header {
 }
 
 .position {
-    margin-bottom: 50px;
     position: relative;
+}
+
+@media screen and (min-width: 480px) {
+    .position {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .position {
+        margin-bottom: 50px;
+        text-align: left;
+    }
 }
 
 .position::after {
     content: '';
     position: absolute;
     display: block;
-    height: 1px;
     left: 0;
     right: 0;
-    top: 75px;
     background-color: var(--accent-color);
 }
 
-.main {
-    display: flex;
+@media screen and (min-width: 480px) {
+    .position::after {
+        top: 35px;
+        height: 0.5px;
+    }
 }
 
-.left-side {
-    max-width: 400px;
+@media screen and (min-width: 1200px) {
+    .position::after {
+        height: 1px;
+        top: 75px;
+    }
 }
 
-.right-side {
-    max-width: 500px;
-    margin-left: 200px;
+@media screen and (min-width: 480px) {
+    .main {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .left-side {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .left-side {
+        max-width: 400px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .right-side {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .right-side {
+        max-width: 500px;
+        margin-left: 200px;
+        text-align: left;
+    }
 }
 
 .contacts__item {
