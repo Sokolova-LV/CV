@@ -238,6 +238,10 @@ p {
     line-height: 1.5;
 }
 
+.project__item {
+    margin-bottom: 15px;
+}
+
 .project__link {
     color: var(--accent-color);
 }
