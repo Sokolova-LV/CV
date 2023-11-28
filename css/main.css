@@ -243,13 +243,24 @@ p {
 }
 
 .project__link {
+    font-weight: bold;
     color: var(--accent-color);
 }
 
 .project__link:hover,
 .project__link:focus {
+    color: red;
+    transition: var(--duration), var(--timing-function);
+}
+
+.project__git {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+.project__git:hover,
+.project__git:focus {
     color: var(--accent-color);
-    font-weight: 700;
     transition: var(--duration), var(--timing-function);
 }
 
