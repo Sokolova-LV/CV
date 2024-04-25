@@ -1,165 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
-    
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <header>
-        <section class="header">
-            <div class="container">
-                <h1 class="name">Leila Sokolova</h1>
-                <h2 class="position">Trainee/Junior Front-End Developer</h2>
-            </div>
-        </section>
+    <header class="container header">
+        <div class="header__menu">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="#">home</a></li>
+                <li class="header__item"><a class="header__link" href="#about__label">about me</a></li>
+                <li class="header__item"><a class="header__link" href="#experience__label">experience</a></li>
+                <li class="header__item"><a class="header__link" href="#projects__label">projects</a></li>
+                <li class="header__item"><a class="header__link" href="#education__label">education</a></li>
+                <li class="header__item"><a class="header__link" href="#contacts__label">contacts</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
-        <div class="container">
-            <section class="main">
-                <div class="left-side">
-                    <div class="contacts">
-                        <h3 class="contacts__title">CONTACTS</h3>
-                        <ul class="contacts__list">
-                        <li class="contacts__item">
-                            <a class="contacts__link" href="tel:+380501389898">+38(050)138-98-98</a>
-                        </li>
-                        <li class="contacts__item">
-                            <a class="contacts__link" href="mailto:leyla-@ukr.net">leyla-@ukr.net</a>
-                        </li>
-                        <li class="contacts__item">
-                            <a class="contacts__link" href="https://www.linkedin.com/in/leila-sokolova-531a04296/">LinkedIn</a>
-                        </li>
-                        <li class="contacts__item">
-                            <a class="contacts__link" href="https://t.me/Sokolova_LV">Telegram</a>
-                        </li>
-                        <li class="contacts__item">
-                            <a class="contacts__link" href="http://github.com/Sokolova-LV">GitHub</a>
-                        </li>
-                        <li class="contacts__item">
-                            <p class="contacts__text">Kyiv, Ukraine</p>
-                        </li>
-                    </ul>
-                    </div>
-                    <div class="tech-skills">
-                        <h3 class="tech-skills__title">TECH SKILLS</h3>
-                        <ul class="tech-skills__list">
-                            <li class="tech-skills__item">VSCode</li>
-                            <li class="tech-skills__item">HTML</li>
-                            <li class="tech-skills__item">CSS</li>
-                            <li class="tech-skills__item">JavaScript</li>
-                            <li class="tech-skills__item">React</li>
-                            <li class="tech-skills__item">Figma</li>
-                        </ul>
-                    </div>
-                    <div class="languages">
-                        <h3 class="languages__title">LANGUAGES</h3>
-                        <ul class="languages__list">
-                            <li class="languages__item">English (Upper-Intermediate)</li>
-                            <li class="languages__item">Ukrainian</li>
-                        </ul>
-                    </div>
-                    <div class="soft-skills">
-                        <h3 class="soft-skills__title">SOFT SKILLS</h3>
-                        <ul class="soft-skills__list">
-                            <li class="soft-skills__item">Strong analytical thinking</li>
-                            <li class="soft-skills__item">Well-developed organizational skills</li>
-                            <li class="soft-skills__item">Highly responsible</li>
-                        </ul>
-                    </div>
-                </div>
-        
-                <div class="right-side">
-                    <div class="summary">
-                        <h3 class="summary__title">SUMMARY</h3>
-                        <p class="summary__text">I am a junior front-end developer. I focus on HTML, CSS, JavaScript, React, Node.js. 
-                            Looking for getting the first experience in the field of IT. I am a fast learner, responsible and always up for a challenge.</p>
-                    </div>
-        
-                    <div class="project">
-                        <h3 class="project__title">PROJECT EXPERIENCE</h3>
-                        <ul class="project__list">
-                            <li class="project__item">
-                                <h4 class="project__name">Todo List (JS, React, HTML, CSS)</h4>
-                                <p class="project__text">Create, edit and manage tasks. Capture ideas, mark as completed, and delete effortlessly.</p>
-                                <a class="project__link" href="https://sokolova-lv.github.io/todolist/">Link,</a>
-                                <a class="project__git" href="https://github.com/Sokolova-LV/todolist">GitHub-repository</a>
-                            </li>
+        <section class="container main">
+            <h1 class="main__title">Hi 👋, I'm Leila. A frontend developer from Ukraine</h1>
+            <p class="main__text">I am a junior front-end developer. I focus on HTML, CSS, JavaScript, React, Node.js.
+                Looking for getting the first experience in the field of IT. I am a fast learner, responsible and always
+                up for a
+                challenge.</p>
+            <a href="https://t.me/Sokolova_LV" class="main__btn">hire me!</a>
+        </section>
 
-                            <li class="project__item">
-                                <h4 class="project__name">Filmoteka (JS, React, HTML, CSS)</h4>
-                                <p class="project__text">Movie search service. Displays popular movies in real time, allows you to search for movies by title, provides information on each film.</p>
-                                <a class="project__link" href="https://sokolova-lv.github.io/goit-react-hw-05-movies/">Link,</a>
-                                <a class="project__git" href="https://github.com/Sokolova-LV/filmoteka">GitHub-repository</a>
-                            </li>
-                            <li class="project__item">
-                                <h4 class="project__name">Phonebook (JS, React, HTML, CSS)</h4>
-                                <p class="project__text">Phone book app. Allows you to create, delete and search for your contacts. You can register, log in and log out of your account.</p>
-                                <a class="project__link" href="https://sokolova-lv.github.io/phonebook/">Link,</a>
-                                <a class="project__git" href="https://github.com/Sokolova-LV/phonebook">GitHub-repository</a>
-                            </li>
-                            <li class="project__item">
-                                <h4 class="project__name">IceCream (CSS, HTML, JS)</h4>
-                                <p class="project__text">Website of ice-cream store (concept). Responsive design, modal windows, animation, slider.</p>
-                                <a class="project__link" href="https://sokolova-lv.github.io/ice-cream/">Link,</a>
-                                <a class="project__git" href="https://github.com/Sokolova-LV/ice-cream">GitHub-repository</a>
-                            </li>
-                            <li class="project__item">
-                                <h4 class="project__name">WebStudio (HTML, SCSS, CSS, JS)</h4>
-                                <p class="project__text">Website of WebStudio company (concept). Responsive design, modal windows.</p>
-                                <a class="project__link" href="https://sokolova-lv.github.io/goit-markup-hw-08/index.html">Link,</a>
-                                <a class="project__git" href="https://github.com/Sokolova-LV/goit-markup-hw-08">GitHub-repository</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="education">
-                        <h3 class="education__title">EDUCATION</h3>
-                        <ul class="education__list">
-                            <li class="education__item">
-                                <h4 class="education__name">IT School GoIT <br> (2022 – present)</h4>
-                                <p class="education__text">Fullstack Developer</p>
-                            </li>
-                            <li class="education__item">
-                                <h4 class="education__name">National University of Ukraine on Physical Education and Sport <br> (2018 – 2020)</h4>
-                                <p class="education__text">Physical Education and Sport, Master's degree in Olympic Sport and Education</p>
-                            </li>
-                            <li class="education__item">
-                                <h4 class="education__name">Taras Shevchenko National University of Kyiv <br> (2014 – 2020)</h4>
-                                <p class="education__text">Ecology, Master's degree in Ecological Safety</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-                <div class="contacts-footer">
-                    <h3 class="contacts-footer__title" hidden>CONTACTS</h3>
-                    <ul class="contacts-footer__list">
-                        <li class="contacts-footer__item">
-                            <a class="contacts-footer__link" href="tel:+380501389898">Call me</a>
+        <section class="container about">
+            <label id="about__label" class="about__label" for="name">ABOUT ME</label>
+            <div class="about__container">
+                <div class="about__left">
+                    <h3 class="about__title">TECH SKILLS</h3>
+                    <ul class="about__list">
+                        <li class="about__item"><img src="./images/tech-skills/vscode.png" alt="vscode" class="about__logo">
+                            <p class="about__text">VSCode</p>
                         </li>
-                        <li class="contacts-footer__item">
-                            <a class="contacts-footer__link" href="mailto:leyla-@ukr.net">Mail me</a>
+                        <li class="about__item"><img src="./images/tech-skills/figma.png" alt="figma" class="about__logo">
+                            <p class="about__text">Figma</p>
                         </li>
-                        <li class="contacts-footer__item">
-                            <a class="contacts-footer__link" href="https://t.me/Sokolova_LV">Text me</a>
+                        <li class="about__item"><img src="./images/tech-skills/html.png" alt="html" class="about__logo">
+                            <p class="about__text">HTML</p>
+                        </li>
+                        <li class="about__item"><img src="./images/tech-skills/css.jpg" alt="css" class="about__logo">
+                            <p class="about__text">CSS</p>
+                        </li>
+                        <li class="about__item"><img src="./images/tech-skills/js.png" alt="js" class="about__logo">
+                            <p class="about__text">JavaScript</p>
+                        </li>
+                        <li class="about__item"><img src="./images/tech-skills/react.png" alt="react" class="about__logo">
+                            <p class="about__text">React</p>
+                        </li>
+                        <li class="about__item"><img src="./images/tech-skills/redux.png" alt="redux" class="about__logo">
+                            <p class="about__text">Redux</p>
+                        </li>
+                        <li class="about__item"><img src="./images/tech-skills/node.svg" alt="nodejs" class="about__logo">
+                            <p class="about__text">Node.js</p>
+                        </li>
+                        <li class="about__item"><img src="./images/tech-skills/express.png" alt="express" class="about__logo">
+                            <p class="about__text">Express</p>
+                        </li>
+                        <li class="about__item"><img src="./images/tech-skills/mongo.svg" alt="mongodb" class="about__logo">
+                            <p class="about__text">mongoDB</p>
+                        </li>
+                        <li class="about__item"><img src="./images/tech-skills/postman.svg" alt="postman" class="about__logo">
+                            <p class="about__text">Postman</p>
+                        </li>
+                        <li class="about__item"><img src="./images/tech-skills/webpack.png" alt="webpack" class="about__logo">
+                            <p class="about__text">Webpack</p>
                         </li>
                     </ul>
                 </div>
+
+                <div class="about__right">
+                    <h3 class="about__title">LANGUAGES</h3>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <img src="./images/languages/ukr-flag.jpg" alt="ukr" class="about__logo">
+                            <p class="about__text">(native)</p>
+                        </li>
+                        <li class="about__item">
+                            <img src="./images/languages/eng-flag.png" alt="eng" class="about__logo">
+                            <p class="about__text">(upper-intermediate)</p>
+                        </li>
+                    </ul>
+                    <h3 class="about__title">SOFT SKILLS</h3>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <img src="./images/soft.jpg" alt="square" class="about__logo">
+                            <p class="about__text">critical thinking</p>
+                        </li>
+                        <li class="about__item">
+                            <img src="./images/soft-2.png" alt="square" class="about__logo">
+                            <p class="about__text">emotional<br>intelligence</p>
+                        </li>
+                        <li class="about__item">
+                            <img src="./images/soft.jpg" alt="square" class="about__logo">
+                            <p class="about__text">striving for growth</p>
+                        </li>
+                        <li class="about__item">
+                            <img src="./images/soft-2.png" alt="square" class="about__logo">
+                            <p class="about__text">comprehensive<br>problem solving</p>
+                        </li>
+                        <li class="about__item">
+                            <img src="./images/soft.jpg" alt="square" class="about__logo">
+                            <p class="about__text">self-organization skills</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="container experience">
+            <label id="experience__label" class="experience__label" for="name">EXPERIENCE</label>
+            <ul class="experience__list">
+                <li class="experience__item">
+                    <h3 class="experience__title">Meduzzen Front-End Internship</h3>
+                    <p class="experience__time">(march - april 2024)</p>
+                    <img class="experience__logo" src="" alt="">
+                    <p class="experience__text">Creating an application with components for user registration and
+                        authorization.<br>Technology stack: <span class="experience__span">TypeScript, React, Redux-Toolkit,
+                        Axios</span></p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="container projects">
+            <label id="projects__label" class="projects__label" for="name">PROJECTS</label>
+            <ul class="projects__list">
+                <li class="projects__item">
+                    <h3 class="projects__title">Todo List <span class="projects__span">(JS, React, HTML, CSS)</span></h3>
+                    <a class="projects__link" href="https://sokolova-lv.github.io/todolist/"><img src="./images/projects/todo-list.png" alt="todo-list"
+                            class="projects__logo"></a>
+                    <p class="projects__text">Create, edit and manage tasks. Capture ideas, mark as completed, and
+                        delete effortlessly.</p>
+                </li>
+                <li class="projects__item">
+                    <h3 class="projects__title">Filmoteka <span class="projects__span">(JS, React, HTML, CSS)</span></h3>
+                    <a class="projects__link" href="https://sokolova-lv.github.io/goit-react-hw-05-movies/"><img src="./images/projects/filmoteka.png"
+                            alt="filmoteka" class="projects__logo"></a>
+                    <p class="projects__text">Movie search service. Displays popular movies in real time, allows you to
+                        search for movies by title, provides
+                        information on each film.</p>
+                </li>
+                <li class="projects__item">
+                    <h3 class="projects__title">IceCream <span class="projects__span">(CSS, HTML, JS)</span></h3>
+                    <a class="projects__link" href="https://sokolova-lv.github.io/ice-cream/"><img src="./images/projects/ice-cream.png" alt="ice-cream"
+                            class="projects__logo"></a>
+                    <p class="projects__text">Website of ice-cream store (concept). Responsive design, modal windows,
+                        animation, slider.</p>
+                </li>
+                <li class="projects__item">
+                    <h3 class="projects__title">WebStudio <span class="projects__span">(HTML, SCSS, CSS, JS)</span></h3>
+                    <a class="projects__link" href="https://sokolova-lv.github.io/goit-markup-hw-08/index.html"><img
+                            src="./images/projects/webstudio.png" alt="webstudio" class="projects__logo"></a>
+                    <p class="projects__text">Website of WebStudio company (concept). Responsive design, modal windows.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="container education">
+            <label id="education__label" class="education__label" for="name">EDUCATION</label>
+            <ul class="education__list">
+                <li class="education__item">
+                    <div class="education__wrap">
+                        <h3 class="education__title">IT School GoIT</h3>
+                        <img src="./images/education/goit.png" alt="goit" class="education__logo">
+                    </div>
+                    <p class="education__time">(2022 - 2024)</p>
+                    <p class="education__text">Fullstack Developer</p>
+                </li>
+                <li class="education__item">
+                    <div class="education__wrap">
+                        <h3 class="education__title">National University of Ukraine on Physical Education and Sport</h3>
+                        <img src="./images/education/sport.png" alt="sport" class="education__logo">
+                    </div>
+                    <p class="education__time">(2018 - 2020)</p>
+                    <p class="education__text">Physical Education and Sport, Master's degree in Olympic Sport and
+                        Education</p>
+                </li>
+                <li class="education__item">
+                    <div class="education__wrap">
+                        <h3 class="education__title">Taras Shevchenko National University of Kyiv</h3>
+                        <img src="./images/education/knu.png" alt="knu" class="education__logo">
+                    </div>
+                    <p class="education__time">(2014 - 2020)</p>
+                    <p class="education__text">Ecology, Master's degree in Ecological Safety</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="container contacts">
+        <label id="contacts__label" class="contacts__label" for="name">CONTACTS</label>
+        <div class="contacts__wrap">
+            <div class="contacts-left">
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <img src="./images/dot.png" alt="place" class="contacts__logo">
+                        <p class="contacts__text">Kyiv, Ukraine</p>
+                    </li>
+                    <li class="contacts__item">
+                        <img src="./images/dot.png" alt="phone" class="contacts__logo">
+                        <a href="tel:+380501389898" class="contacts__link">+380-50-138-98-98</a>
+                    </li>
+                    <li class="contacts__item">
+                        <img src="./images/dot.png" alt="email" class="contacts__logo">
+                        <a href="mailto:leyla-@ukr.net" class="contacts__link">leyla-@ukr.net</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="contacts-right">
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <img src="./images/dot.png" alt="dot" class="contacts__logo">
+                        <a href="https://www.linkedin.com/in/leila-sokolova-531a04296/" class="contacts__link">LinkedIn</a>
+                    </li>
+                    <li class="contacts__item">
+                        <img src="./images/dot.png" alt="dot" class="contacts__logo">
+                        <a href="https://t.me/Sokolova_LV" class="contacts__link">Telegram</a>
+                    </li>
+                    <li class="contacts__item">
+                        <img src="./images/dot.png" alt="dot" class="contacts__logo">
+                        <a href="http://github.com/Sokolova-LV" class="contacts__link">GitHub</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>
